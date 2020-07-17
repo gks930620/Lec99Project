@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" prefHeight="480.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myserver.SocketServerController">
+    <children>
+        <HBox>
+            <children>
+                <Label alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="260.0" text="접속자 수 : " textAlignment="RIGHT" />
+                <Label fx:id="statusLabel" alignment="CENTER" prefHeight="40.0" prefWidth="60.0" textAlignment="CENTER" />
+            </children>
+        </HBox>
+        <ListView fx:id="chatView" focusTraversable="false" prefHeight="400.0" prefWidth="300.0" />
+        <ToggleButton fx:id="serverButton" mnemonicParsing="false" onAction="#serverAction" prefHeight="40.0" prefWidth="320.0" styleClass="server-toggle" stylesheets="@SocketServer.css" text="시작" textAlignment="CENTER" />
+    </children>
+</VBox>

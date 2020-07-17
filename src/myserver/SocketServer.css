@@ -1,0 +1,11 @@
+.server-toggle {
+    -fx-background-color: #007bff;
+    -fx-border-color: #007bff;
+    -fx-text-fill: #fff;
+}
+
+.server-toggle:selected {
+    -fx-background-color: #dc3545;
+    -fx-border-color: #dc3545;
+    -fx-text-fill: #fff;
+}
